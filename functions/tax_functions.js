@@ -31,6 +31,14 @@ function getFederalTax(preTaxAmount, withHoldCode) {
   return fedTaxAmnt;
 }
 
-console.log(getFederalTax(750, 0).toFixed(2));
-console.log(getFederalTax(1550, 2).toFixed(2));
-console.log(getFederalTax(1100, 6).toFixed(2));
+let totalDeductions =
+  getFederalTax(750, 2) + getSocSecTax(750) + getMedicareTax(750);
+
+let leftoverAmount = 750 - totalDeductions;
+
+console.log(
+  "Total deductions are: " +
+    String(totalDeductions) +
+    ", and your leftover amount is: " +
+    String(leftoverAmount)
+);
