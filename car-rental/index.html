@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>ACME Car Rental</h1>
+    <div class="important-inputs">
+      <label for="pickupDateInput">Pickup Date:</label>
+      <input type="text" id="pickupDateInput" />
+      <label for="rentalDaysAmountInput">Number Of Days:</label>
+      <input type="text" id="rentalDaysAmountInput" />
+    </div>
+
+    <p class="options-paragragh">Options</p>
+
+    <div class="option-checkbox">
+      <input id="optionOne" type="checkbox" />
+      <label for="optionOne">Electronic Toll Tag ($3.95/day)</label>
+      <input id="optionTwo" type="checkbox" />
+      <label for="optionTwo">GPS ($2.95/day)</label>
+      <input id="optionThree" type="checkbox" />
+      <label for="optionThree" style="margin-bottom: 1rem"
+        >Roadside Assistance ($2.95/day)</label
+      >
+    </div>
+
+    <div class="age-select" style="display: inline">
+      <p>Under 25</p>
+      <input type="radio" id="AgeNoSelectionRadio" />
+      <label for="AgeNoSelectionRadio">No</label>
+      <input type="radio" id="AgeYesSelectionRadio" />
+      <label for="AgeYesSelectionRadio" style="margin-bottom: 2rem">Yes</label>
+    </div>
+    <div class="cost-totalling" style="margin-top: 2rem">
+      <button
+        id="estimateCostButton"
+        type="button"
+        onclick="estimateCostButton()"
+        style="font-size: 1.4rem; width: 50%; margin-bottom: 1.5rem">
+        Estimate Total Cost
+      </button>
+
+      <label for="carRentalPrice">Car rental:</label>
+      <p id="carRentalPrice"></p>
+      <label for="optionsPrice">Options:</label>
+      <p id="optionsPrice"></p>
+      <label for="ageSurcharge">Under 25 Surcharge:</label>
+      <p id="ageSurcharge"></p>
+    </div>
+    <div class="total-due">
+      <label for="totalAmountDue">Total Due:</label>
+      <p id="totalAmountDue"></p>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

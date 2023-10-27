@@ -1,0 +1,46 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.important-inputs {
+  flex-direction: column;
+  width: 15rem;
+}
+
+#pickupDateInput {
+  margin-bottom: 1rem;
+}
+
+#rentalDaysAmountInput {
+  margin-bottom: 1rem;
+}
+
+.options-paragragh {
+  display: block;
+}
+
+.option-checkbox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: start;
+}
+div {
+  display: flex;
+}
+
+.cost-totalling {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-due {
+    display: flex;
+    align-content: center;
+    border: solid 2px rgba(0, 0, 0, 20);
+    box-shadow: 1px 1px 15px rgba(20, 20, 20, 20);
+    padding: 1.5rem;
+    padding-top: 2rem;
+}
