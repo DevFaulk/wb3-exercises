@@ -25,9 +25,20 @@ input {
   display: inline;
 }
 
+.group-one,
+.group-two,
+.group-three {
+  padding-block: 0.5rem;
+}
+
 .age-select > input {
   height: 1.5rem;
   width: 1rem;
+  margin: auto;
+}
+
+.age-select {
+  text-align: center;
   margin: auto;
 }
 

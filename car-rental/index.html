@@ -15,7 +15,10 @@
       <label for="pickupDateInput">Pickup Date:</label>
       <input type="date" id="pickupDateInput" />
       <label for="rentalDaysAmountInput">Number Of Days:</label>
-      <input type="text" id="rentalDaysAmountInput" placeholder="Length of rental" />
+      <input
+        type="text"
+        id="rentalDaysAmountInput"
+        placeholder="Length of rental" />
     </div>
 
     <!-- options text -->
@@ -41,10 +44,14 @@
     <!-- age select radio buttons -->
     <div class="age-select" style="display: inline">
       <h4>Under 25</h4>
+      <input type="radio" name="ageSelectionRadio" id="ageYesSelectionRadio" />
+      <label
+        for="ageYesSelectionRadio"
+        style="margin-bottom: 2rem; margin-right: 2rem"
+        >Yes</label
+      >
       <input type="radio" name="ageSelectionRadio" id="ageNoSelectionRadio" />
       <label for="ageNoSelectionRadio">No</label>
-      <input type="radio" name="ageSelectionRadio" id="ageYesSelectionRadio" />
-      <label for="ageYesSelectionRadio" style="margin-bottom: 2rem">Yes</label>
     </div>
 
     <!-- button that on click will input all costs into text below button -->
