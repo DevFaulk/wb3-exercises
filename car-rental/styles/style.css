@@ -2,12 +2,39 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  font-size: 1.2rem;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to top left,
+    rgb(255, 255, 255),
+    rgba(88, 66, 255, 0.535)
+  );
+}
+
+input {
+  font-size: 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.group-one > input,
+.group-two > input,
+.group-three > input {
+  height: 1.5rem;
+  width: 1rem;
+  display: inline;
+}
+
+.age-select > input {
+  height: 1.5rem;
+  width: 1rem;
+  margin: auto;
 }
 
 .important-inputs {
   flex-direction: column;
   width: 15rem;
+  text-align: center;
 }
 
 #pickupDateInput {
@@ -34,15 +61,27 @@ div {
 .cost-totalling {
   display: flex;
   flex-direction: column;
+  font-weight: 500;
 }
 
 .total-due {
-    display: flex;
-    align-content: center;
-    border: solid 1px rgba(0, 0, 0, 20);
-    box-shadow: 1px 1px 4px rgba(20, 20, 20, 10);
-    padding: 1.5rem;
-    padding-top: 2rem;
-    width: 200px;
-    flex-direction: column;
+  display: flex;
+  align-content: center;
+  border: solid 1px rgba(0, 0, 0, 20);
+  box-shadow: 1px 1px 4px rgba(20, 20, 20, 10);
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  flex-direction: column;
+  width: 30%;
+  font-weight: 600;
+}
+
+.cost-totalling {
+  text-align: center;
+}
+
+#estimateCostButton {
+  margin: auto;
+  background-color: rgba(75, 255, 25, 0.483);
 }

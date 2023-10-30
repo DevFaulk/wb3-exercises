@@ -15,35 +15,35 @@
       <label for="pickupDateInput">Pickup Date:</label>
       <input type="date" id="pickupDateInput" />
       <label for="rentalDaysAmountInput">Number Of Days:</label>
-      <input type="text" id="rentalDaysAmountInput" />
+      <input type="text" id="rentalDaysAmountInput" placeholder="Length of rental" />
     </div>
 
     <!-- options text -->
-    <p class="options-paragragh">Options</p>
+    <h4 class="options-paragragh">Options</h4>
 
     <div class="option-checkbox">
-      <input id="optionOne" type="checkbox" />
-      <label for="optionOne">Electronic Toll Tag ($3.95/day)</label>
-      <input id="optionTwo" type="checkbox" />
-      <label for="optionTwo">GPS ($2.95/day)</label>
-      <input id="optionThree" type="checkbox" />
-      <label for="optionThree" style="margin-bottom: 1rem"
-        >Roadside Assistance ($2.95/day)</label
-      >
+      <div class="group-one">
+        <input id="optionOne" type="checkbox" />
+        <label for="optionOne">Electronic Toll Tag ($3.95/day)</label>
+      </div>
+      <div class="group-two">
+        <input id="optionTwo" type="checkbox" />
+        <label for="optionTwo">GPS ($2.95/day)</label>
+      </div>
+      <div class="group-three">
+        <input id="optionThree" type="checkbox" />
+        <label for="optionThree" style="margin-bottom: 1rem"
+          >Roadside Assistance ($2.95/day)</label
+        >
+      </div>
     </div>
 
     <!-- age select radio buttons -->
     <div class="age-select" style="display: inline">
-      <p>Under 25</p>
-      <input
-        type="radio"
-        name="ageSelectionRadio"
-        id="ageNoSelectionRadio"/>
+      <h4>Under 25</h4>
+      <input type="radio" name="ageSelectionRadio" id="ageNoSelectionRadio" />
       <label for="ageNoSelectionRadio">No</label>
-      <input
-        type="radio"
-        name="ageSelectionRadio"
-        id="ageYesSelectionRadio"/>
+      <input type="radio" name="ageSelectionRadio" id="ageYesSelectionRadio" />
       <label for="ageYesSelectionRadio" style="margin-bottom: 2rem">Yes</label>
     </div>
 
@@ -53,7 +53,7 @@
         id="estimateCostButton"
         type="button"
         onclick="estimateCostButton()"
-        style="font-size: 1.4rem; width: 50%; margin-bottom: 1.5rem">
+        style="font-size: 2rem; width: 100%; margin-bottom: 1.5rem">
         Estimate Total Cost
       </button>
 
