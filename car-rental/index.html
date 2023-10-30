@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <!-- title -->
     <h1>ACME Car Rental</h1>
+
+    <!-- both top page inputs -->
     <div class="important-inputs">
       <label for="pickupDateInput">Pickup Date:</label>
-      <input type="text" id="pickupDateInput" />
+      <input type="date" id="pickupDateInput" />
       <label for="rentalDaysAmountInput">Number Of Days:</label>
       <input type="text" id="rentalDaysAmountInput" />
     </div>
 
+    <!-- options text -->
     <p class="options-paragragh">Options</p>
 
     <div class="option-checkbox">
@@ -28,13 +32,16 @@
       >
     </div>
 
+    <!-- age select radio buttons -->
     <div class="age-select" style="display: inline">
       <p>Under 25</p>
-      <input type="radio" id="AgeNoSelectionRadio" />
-      <label for="AgeNoSelectionRadio">No</label>
-      <input type="radio" id="AgeYesSelectionRadio" />
-      <label for="AgeYesSelectionRadio" style="margin-bottom: 2rem">Yes</label>
+      <input type="radio" id="ageNoSelectionRadio" onclick="underTwentyFiveToggle" />
+      <label for="ageNoSelectionRadio">No</label>
+      <input type="radio" id="ageYesSelectionRadio" onclick="underTwentyFiveToggle" />
+      <label for="ageYesSelectionRadio" style="margin-bottom: 2rem">Yes</label>
     </div>
+
+    <!-- button that on click will input all costs into text below button -->
     <div class="cost-totalling" style="margin-top: 2rem">
       <button
         id="estimateCostButton"
@@ -44,6 +51,7 @@
         Estimate Total Cost
       </button>
 
+      <!-- all totals after calculations except for total due -->
       <label for="carRentalPrice">Car rental:</label>
       <p id="carRentalPrice"></p>
       <label for="optionsPrice">Options:</label>
@@ -51,10 +59,13 @@
       <label for="ageSurcharge">Under 25 Surcharge:</label>
       <p id="ageSurcharge"></p>
     </div>
+
+    <!-- the absolute total after all calculations are done -->
     <div class="total-due">
       <label for="totalAmountDue">Total Due:</label>
       <p id="totalAmountDue"></p>
     </div>
+
     <script src="scripts/script.js"></script>
   </body>
 </html>
