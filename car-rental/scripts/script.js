@@ -38,7 +38,6 @@ function estimateCostButton() {
   let rentalDays = parseInt(
     document.getElementById("rentalDaysAmountInput").value
   );
-  let pickupDate = document.getElementById("pickupDateInput").value;
   let carRentalPrice = document.getElementById("carRentalPrice");
   let ageSurcharge = document.getElementById("ageSurcharge");
   let totalAmountDue = document.getElementById("totalAmountDue");
@@ -52,5 +51,5 @@ function estimateCostButton() {
   optionsPrice.innerText = optionTotal.toFixed(2);
   ageSurcharge.innerText = ageSurchargeTotal.toFixed(2);
 
-  totalAmountDue = totalAmount.toFixed(2);
+  totalAmountDue.innerText = totalAmount.toFixed(2);
 }
